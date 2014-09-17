@@ -11,9 +11,19 @@ Public Class Form1
         num1 = CDbl(st1)
         num2 = CDbl(st2)
 
-        ' Your code here
+        If num1 < num2 Then
+            txtResult.Text = "the largerNum is " & num2
+        ElseIf num1 < num2 Then
+            txtResult.Text = "the largerNum is " & num1
+        Else
+            txtResult.Text = "they are equal"
+        End If
 
-        txtResult.Text = "Not implemented yet"
+
+
     End Sub
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
